@@ -10,11 +10,11 @@ const playlistSchema = new Schema({
     },
     //array because of the number of videos
     videos:[{
-        type:Schema.types.ObjectID,
+        type:Schema.Types.ObjectID,
         ref:"videos"
     }],
     owner:{
-        type:Schema.types.ObjectID,
+        type:Schema.Types.ObjectID,
         ref:"user"
     }
 },{timestamps:true});

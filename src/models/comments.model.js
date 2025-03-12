@@ -6,11 +6,11 @@ const commentsSchema = new Schema({
         required:true
     },
     video:{
-        type:Schema.types.ObjectId,
+        type:Schema.Types.ObjectId,
         ref:"videos"
     },
     owner:{
-        type:Schema.types.ObjectId,
+        type:Schema.Types.ObjectId,
         ref:"users"
     }
 },{timestamps:true});
